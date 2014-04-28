@@ -110,11 +110,11 @@ describe('chatterbox', function() {
       it('should try to send a message upon clicking submit', function(){
         sinon.spy(app, 'handleSubmit');
 
-        $('#message').text('Why so many Mel Brooks quotes?');
+        $('#text').text('Why so many Mel Brooks quotes?');
 
         app.init();
 
-        $('#send .submit').trigger('submit');
+        $('#text').trigger('submit');
         expect(app.handleSubmit.calledOnce).to.be.true;
 
         app.handleSubmit.restore();

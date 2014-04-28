@@ -7,6 +7,7 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <!-- your scripts -->
     <script src="scripts/config.js"></script>
     <script src="scripts/app.js"></script>
@@ -15,6 +16,20 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <div id="input">
+        <input id='room' placeholder="Enter Room">
+        <input id='text' placeholder="Enter message"><button type="submit" id='submitText'>Submit</button>
+      </div>
+      <ul id="roomSelect">
+        <li><a href="#">lobby</a></li>
+
+      </ul>
+      <div id="output">
+        <ul id="chats">
+
+        </ul>
+      </div>
     </div>
+    <script src='scripts/init.js'></script>
   </body>
 </html>
