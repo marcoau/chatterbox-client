@@ -14,17 +14,30 @@
   </head>
   <body>
     <div id="main">
-      <h1>chatterbox</h1>
+      <h1>Chatterbox</h1>
       <!-- Your HTML goes here! -->
       <div id="input">
-        <input id='room' placeholder="Enter Room">
-        <input id='text' placeholder="Enter message"><button type="submit" id='submitText'>Submit</button>
-      </div>
-      <ul id="roomSelect">
-        <li><a href="#">lobby</a></li>
+        <div>You are now at <span id='currentRoom'></span></div>
+        <input id='text' placeholder="Enter message">
+        <button type="submit" id='submitText'>Submit</button><br>
+        <input id='room' placeholder="Add Room">
+        <button type="submit" id='addRoom'>Add Room</button>
 
-      </ul>
+      </div>
+      <div id="rooms">
+        <h3>Select Room:</h3>
+        <ul id="roomSelect">
+          <li><a href="#">lobby</a></li>
+        </ul>
+      </div>
+      <div id="friends">
+        <h3>Your friends:</h3>
+        <ul id="friendSelect">
+          <li><a href="#">lobby</a></li>
+        </ul>
+      </div>
       <div id="output">
+        <h3>Tweets:</h3>
         <ul id="chats">
 
         </ul>

@@ -30,6 +30,16 @@ body {
     padding-left: 20px;
 }
 
+#main #rooms, #main #friends {
+    width: 250px;
+    display: inline-block;
+}
+
+#currentRoom {
+    font-weight: bold;
+    font-size: 28px;
+}
+
 #main .error {
     border: 1px solid red;
     background: #FDEFF0;

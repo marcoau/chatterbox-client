@@ -69,9 +69,9 @@ app.displayMessages = function(messages){
 
 app.addMessage = function(message){
   if(app._friends[message.username] === true){
-    var template = _.template('<li><strong><a href="#" class="friend"><%- username %></a>: <%- text %></strong></li>');
+    var template = _.template('<div class="chat"><strong><a href="#" class="friend"><span class="username"><%- username %></span></a>: <%- text %></strong></li>');
   } else {
-    var template = _.template('<li><a href="#" class="friend"><%- username %></a>: <%- text %></li>');
+    var template = _.template('<div class="chat"><a href="#" class="friend"><span class="username"><%- username %></span></a>: <%- text %></li>');
   }
   $('#chats').append(template(message));
 };
